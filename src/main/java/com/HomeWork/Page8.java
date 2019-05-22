@@ -2,7 +2,7 @@ package com.HomeWork;
 
 import java.util.Scanner;
 
-public class Page6 {
+public class Page8 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String secretWord = "sparrow";
@@ -23,5 +23,6 @@ public class Page6 {
         }
     }
 }
+//сы
 
 
