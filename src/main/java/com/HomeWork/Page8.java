@@ -20,6 +20,7 @@ public class Page8 {
         }
         else{
             System.out.println("You loss!");
+
         }
     }
 }

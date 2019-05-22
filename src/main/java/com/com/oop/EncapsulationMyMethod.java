@@ -1,4 +1,4 @@
-package com.HomeWork;
+package com.com.oop;
 
 public class EncapsulationMyMethod {
 /*    We have 4 Access modifiers
@@ -8,4 +8,5 @@ public class EncapsulationMyMethod {
       private
 */
     public String s = "Hello World";
+
 }

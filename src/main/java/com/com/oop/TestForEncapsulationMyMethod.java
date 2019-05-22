@@ -1,4 +1,4 @@
-package com.HomeWork;
+package com.com.oop;
 
 public class TestForEncapsulationMyMethod {
     public static void main (String[] args){
