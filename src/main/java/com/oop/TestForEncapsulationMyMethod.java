@@ -1,11 +1,12 @@
-package com.com.oop;
+package com.oop;
 
 public class TestForEncapsulationMyMethod {
     public static void main (String[] args){
         EncapsulationMyMethod obj = new EncapsulationMyMethod();
-        System.out.println(obj.s);
+        System.out.println(obj.getS());
 
-        obj.s = "It's modified";
-        System.out.println(obj.s);
+        obj.setS("It's modified");
+        System.out.println(obj.getS());
     }
+
 }
