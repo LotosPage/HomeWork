@@ -1,0 +1,103 @@
+package web;
+search.sendKeys(Keys.ENTER);
+
+1) BY ID
+    <div id="coolestWidgetEvah">...</div>
+    WebElement element = driver.findElement(By.id("coolestWidgetEvah"));
+
+2) BY CLASS NAME
+   <div class="cheese"><span>Cheddar</span></div><div class="cheese"><span>Gouda</span></div>
+   List<WebElement> cheeses = driver.findElements(By.className("cheese"));
+
+3) BY TAG NAME
+    <iframe src="..."></iframe>
+    WebElement frame = driver.findElement(By.tagName("iframe"));
+
+4) BY NAME
+    <input name="cheese" type="text"/>
+    WebElement cheese = driver.findElement(By.name("cheese"));
+
+5) BY LINK TEXT
+    <a href="http://www.google.com/search?q=cheese">cheese</a>>
+    WebElement cheese = driver.findElement(By.linkText("cheese"));
+
+6) BY PARTIAL LINK TEXT
+    <a href="http://www.google.com/search?q=cheese">search for cheese</a>>
+    WebElement cheese = driver.findElement(By.partialLinkText("cheese"));
+
+7) BY CSS
+    <div id="food"><span class="dairy">milk</span><span class="dairy aged">cheese</span></div>
+    WebElement cheese = driver.findElement(By.cssSelector("#food span.dairy.aged"));
+
+8) BY XPath
+    <input type="text" name="example" />
+    <INPUT type="text" name="other" />
+    List<WebElement> inputs = driver.findElements(By.xpath("//input"));
+
+9) Getting text values
+    WebElement element = driver.findElement(By.id("elementID"));
+    element.getText();
+
+10) User Input - Filling In Forms
+    WebElement select = driver.findElement(By.tagName("select"));
+    List<WebElement> allOptions = select.findElements(By.tagName("option"));
+    for (WebElement option : allOptions) {
+        System.out.println(String.format("Value is: %s", option.getAttribute("value")));
+        option.click();
+    }
+11) driver.findElement(By.id("submit")).click();
+
+12) element.submit();
+
+13) driver.navigate().forward();
+    driver.navigate().back();
+
+14) Drag And Drop
+    WebElement element = driver.findElement(By.name("source"));
+    WebElement target = driver.findElement(By.name("target"));
+    (new Actions(driver)).dragAndDrop(element, target).perform();
+
+
+
+
+
+
+
+
+//    static void ChromeDriverHead (){
+//
+//        System.setProperty("webdriver.chrome.driver", "C:\\selenuim\\chromedriver\\chromedriver_win32\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//    }
+//
+////    private static WebDriver driver;
+//
+//    @BeforeClass
+//    public static void setup() {
+////        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver\\chromedriver_win32\\chromedriver.exe");
+////        driver = new ChromeDriver();
+////        driver.manage().window().maximize();
+//        ChromeDriverHead();
+//        driver.get("https://www.mail.ru");
+//
+//        WebElement search = driver.findElement(By.id("q"));
+//
+//        search.sendKeys("Sweet Dogs");
+//        search.sendKeys(Keys.ENTER);
+//
+//    }
+//    //    @AfterMethod
+//    @Test
+//    public void userLogin() {
+//
+//    }
+//
+//    @AfterClass
+//    public static void tearDown(){
+//
+//    }
+//}
+
+//
+}
